@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Заголовки и навигация */
+.header h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Разделы страницы */
+section {
+    padding: 50px;
+    max-width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+#about p, #services li {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#contact address {
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.product-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-subtitle {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.product-pricing strong, .product-pricing span {
+    font-size: 16px;
+}
+
+.buy-button {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #CCB500;
+}
+
+@media(max-width: 768px){
+    .product-card{
+        width: 100%;
+        margin-bottom: 20px;
+}
+
+.content {
+    padding: 2rem;
+    max-width: 960px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-section h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.methods-list {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.payment-methods {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+/* Подвал сайта */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8em;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-top: 0.5rem;
+    }
+
+    
